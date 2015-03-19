@@ -7,7 +7,7 @@ GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
 
 pinNumBTN = 23
-GPIO.setup(pinNumBTN,GPIO.IN) # Specify that pinNumBTN will be an input prevInput = 0
+GPIO.setup(pinNumBTN, GPIO.IN) # Specify that pinNumBTN will be an input prevInput = 0
 
 while True:
     # Get the state of the button input
