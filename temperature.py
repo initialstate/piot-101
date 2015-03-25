@@ -33,6 +33,6 @@ def read_temp():
 while True:
     temp_c = read_temp()
     temp_f = temp_c * 9.0 / 5.0 + 32.0
-    streamer.log("temperature(C)", temp_c)
-    streamer.log("temperature(F)", temp_f)
+    streamer.log("temperature (C)", temp_c)
+    streamer.log("temperature (F)", temp_f)
     time.sleep(.5)
