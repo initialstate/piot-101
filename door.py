@@ -17,10 +17,10 @@ while True:
     if io.input(door_pin):
         #streamer.log("Door", "Open") # stream a message saying "Open"
         #streamer.flush() # send the message immediately
-        door=0 # set door to its initial value
+        door = 0 # set door to its initial value
         time.sleep(1) # wait 1 second before the next action
     ## if the switch is closed and door does not equal 1
     if (io.input(door_pin) == False and door != 1):
         #streamer.log("Door", "Close") # stream a message saying "Close"
         #streamer.flush() # send the message immediately
-        door=1 # set door so that this loop won't act again until the switch has been opened
+        door = 1 # set door so that this loop won't act again until the switch has been opened
