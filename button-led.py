@@ -11,7 +11,7 @@ io.setmode(io.BCM)
 led_io_pin = 4
 button_io_pin = 23
 # Specifies that led_pin will be an output
-io.setup(led_pin, io.OUT)
+io.setup(led_io_pin, io.OUT)
 # Specifies that button_io_pin will be an input
 io.setup(button_io_pin, io.IN)
 
@@ -30,7 +30,7 @@ while True:
     
     if button_on:
         # Turn the LED on
-        io.output(led_pin, io.HIGH)
+        io.output(led_io_pin, io.HIGH)
     else:
         # Turn the LED off
-        io.output(led_pin, io.LOW)
+        io.output(led_io_pin, io.LOW)
