@@ -22,7 +22,7 @@ while True:
     # Get the state of the button input
     button_input = io.input(button_io_pin)
     # Debounce the button
-    if ((not previous_button_input) and button_input):
+    if (previous_button_input == 0 and button_input):
         # Toggle the button on and off
         button_on = not button_on
     previous_button_input = button_input
