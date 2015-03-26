@@ -10,7 +10,7 @@ def start_streaming():
 	while True:
 		temp_celcius = therm_sensor.get_temperature()
 		streamer.log("temperature (C)", temp_celcius)
-		temp_fahrenheit = therm_sensor.get_temperature(W1ThermSensor.DECREES_F)
+		temp_fahrenheit = therm_sensor.get_temperature(W1ThermSensor.DEGREES_F)
 		streamer.log("temperature (F)", temp_fahrenheit)
 		time.sleep(.5)
 		streamer.flush()
@@ -19,7 +19,7 @@ def stop_streaming():
 	streamer.close()
 
 
-if __name_ == "__main__":
+if __name__ == "__main__":
 	try:
 		print("starting temp streamer")
 		start_streaming()
