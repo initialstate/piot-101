@@ -5,7 +5,7 @@ from ISStreamer.Streamer import Streamer # import the ISStreamer
 ## name the bucket and individual access_key
 #streamer = Streamer(bucket_name="Locker Protector", bucket_key="locker_protector", access_key="YOUR_ACCESS_KEY_HERE")
 
-is.setmode(io.BCM) # set GPIO mode to BCM
+io.setmode(io.BCM) # set GPIO mode to BCM
 door_pin = 23 # enter the number of whatever GPIO pin your're using
 io.setup(door_pin, io.IN, pull_up_down=io.PUD_UP) # use the built-in pull-up resistor
 
