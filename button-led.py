@@ -10,7 +10,7 @@ io.setmode(io.BCM)
 
 led_io_pin = 4
 button_io_pin = 23
-# Specifies that led_pin will be an output
+# Specifies that led_io_pin will be an output
 io.setup(led_io_pin, io.OUT)
 # Specifies that button_io_pin will be an input
 io.setup(button_io_pin, io.IN)
@@ -21,6 +21,7 @@ previous_button_input = 0
 while True:
     # Get the state of the button input
     button_input = io.input(button_io_pin)
+    
     # Debounce the button
     if (previous_button_input == 0 and button_input):
         # Toggle the button on and off
