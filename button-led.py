@@ -8,7 +8,7 @@ io.setwarnings(False)
 # Numbering scheme that corresponds to breakout board and pin layout
 io.setmode(io.BCM)
 
-led_io_pin = 4
+led_io_pin = 17
 button_io_pin = 23
 # Specifies that led_io_pin will be an output
 io.setup(led_io_pin, io.OUT)
