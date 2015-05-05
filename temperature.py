@@ -35,4 +35,5 @@ while True:
     temp_f = temp_c * 9.0 / 5.0 + 32.0
     streamer.log("temperature (C)", temp_c)
     streamer.log("temperature (F)", temp_f)
+    streamer.flush()
     time.sleep(.5)
