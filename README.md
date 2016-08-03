@@ -1,4 +1,4 @@
-#PiOT 101: Introductory Workshop fo the Raspberry Pi + Internet of Things
+#PiOT 101: Introductory Workshop for the Raspberry Pi + Internet of Things
 ---
 
 This is a hub for the 101 tutuorial on learning how to get going on a Raspberry Pi and getting it connected to the Internet of Things.
